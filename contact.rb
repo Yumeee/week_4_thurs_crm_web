@@ -13,11 +13,7 @@ class Contact < ActiveRecord::Base
 
   def full_name
     "#{@first_name} #{@last_name}"
-  end
-
-  # def self.delete(contact)
-  #   @@contacts.delete(contact)
-  # end
+  end 
 end
 
 Contact.auto_upgrade!
