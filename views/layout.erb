@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href="/styles.css" />
+    <meta charset="utf-8">
+    <title> Bitmaker CRM </title>
+  </head>
+
+  <body>
+    <h1> Bitmaker CRM </h1>
+    <nav>
+      <ul>
+        <li><a href="/home"> Home</a></li>
+        <li><a href=""> Add a Contact</a></li>
+        <li><a href=""> About</a></li>
+      </ul>
+    </nav>
+  <p>
+    There are <strong><u><%= @contacts.count%></u></strong> contacts
+  </p>
+
+<main>
+  <%= yield %>
+</main>
+    <footer>
+      &copy; Bitmaker 2018
+    </footer>
+  </body>
+</html>
