@@ -4,9 +4,22 @@
   <li> Last name: <%= @contact.last_name%></li>
   <li> e-mail: <%= @contact.email%></li>
   <li> Notes: <%= @contact.note %> </li>
+  <div class="edit_contacts">
+    <ul>
+      <li>
+        <a href="/contacts/<%= @contact.id %>/edit"> Edit Contact </a>
+      </li>
+      |
+      <li>
+        <form action='/contacts/<%= @contact.id%>' method='post'>
+          <input type='hidden' name='_method' value='delete'>
+          <input type='submit' value='Delete Contact'>
+        </form>
+      </li>
+    </ul>
+  </div>
   </ul>
-<p>
-   <a href="/contacts"> Go back to contacts</a>
-</p>
-
+  <p>
+    <a href="/contacts"> Go back to contacts</a>
+  </p>
 </div>
