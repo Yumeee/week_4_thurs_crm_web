@@ -23,6 +23,7 @@ nav li {
   background-color:#a6a6a6;
   margin: 0.09em;
   padding: 0.2em;
+  text-decoration: none;
 }
 
 nav li a{
@@ -31,7 +32,7 @@ nav li a{
 }
 
 nav li:hover{
-  background-color: black;
+  background-color: #e6e6e6;
   font-weight: bold;
 }
 
@@ -94,4 +95,12 @@ main .ind_contact  ul {
   color: purple;
   border-width: 2px;
   border-color: green;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.all_contacts a{
+  text-decoration: none;
 }
