@@ -15,7 +15,7 @@ h1 {
 }
 
 nav li {
-  display:block;
+  display: block;
   list-style-type: none;
   text-align: center;
   font-size: 1em;
@@ -29,6 +29,12 @@ nav li a{
   color: white;
   font-weight: bold;
 }
+
+nav li:hover{
+  background-color: black;
+  font-weight: bold;
+}
+
 
 nav ul {
   padding: 1px;
@@ -61,12 +67,12 @@ main ul {
   padding: 1.4em;
 }
 
-main ul li {
+main .all_contacts li {
   font-weight: bold;
   font-size: 1.2em;
 }
 
-main ul a{
+main .all_contacts a{
   font-size: 0.8em;
   color: blue;
 }
@@ -77,4 +83,15 @@ p {
   margin-right: 2.5em;
   padding: 1em;
   font-size: 1.2em;
+}
+
+main .ind_contact  ul {
+  border-width: 2px;
+  border-color: black;
+}
+
+.homepage h1{
+  color: purple;
+  border-width: 2px;
+  border-color: green;
 }
